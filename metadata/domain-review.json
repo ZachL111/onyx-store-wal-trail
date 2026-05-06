@@ -1,0 +1,73 @@
+{
+  "repo": "onyx-store-wal-trail",
+  "language": "Swift",
+  "category": "Databases",
+  "goal": "Develop a Swift command-oriented project for wal scenarios with node-edge fixtures, cycle and reachability reports, and no network dependency.",
+  "review_model": {
+    "terms": [
+      "index fit",
+      "join width",
+      "constraint risk",
+      "plan drift"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "index fit",
+      "signal": 47,
+      "slack": 37,
+      "drag": 30,
+      "confidence": 79,
+      "score": 120,
+      "lane": "watch"
+    },
+    {
+      "name": "stress",
+      "focus": "join width",
+      "signal": 59,
+      "slack": 47,
+      "drag": 27,
+      "confidence": 78,
+      "score": 162,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "constraint risk",
+      "signal": 83,
+      "slack": 21,
+      "drag": 16,
+      "confidence": 78,
+      "score": 217,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "plan drift",
+      "signal": 79,
+      "slack": 48,
+      "drag": 21,
+      "confidence": 53,
+      "score": 196,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "index fit",
+      "signal": 81,
+      "slack": 30,
+      "drag": 10,
+      "confidence": 72,
+      "score": 234,
+      "lane": "ship"
+    }
+  ]
+}
